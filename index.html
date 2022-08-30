@@ -1,33 +1,56 @@
 <index class="html">
 
         <head> 
-         <title>  My first website. </title> 
+         <title>  Memory </title> 
          <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="carousel.css" />
          <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
     </head> 
 
     <br>
-    <body style="background-color:rgb(238, 238, 227)">  
+    <body style="background-color:rgb(149, 144, 133)">  
         <h1 > Project 2: <h1> 
         
-            <h2>Donuts </h2>
+            <h2>Memory </h2>
 
-        <img id="donut1" src="img/donut_01.png" width="200" height="200"/>
-        <img id="donut2"src="img/donut_02.png" width="200" height="200"/>
-        <img id="donut3"src="img/donut_03.png" width="200" height="200"/>
+    
+            <img id="icon1" src="img/icon1.png" width="250">
+            <img id="icon2" src="img/icon2.png" width="250">
+            <img id="icon3" src="img/icon3.png" width="250">
+            <img id="icon4" src="img/icon4.png" width="250">
+            <img id="icon5" src="img/icon5.png" width="250">
+            <img id="icon6" src="img/icon6.png" width="250">
+            <img id="icon7" src="img/icon7.png" width="250">
+            <img id="icon8" src="img/icon8.png" width="250">
+            <img id="icon9" src="img/icon9.png" width="250">
+
+        
 
         <script>
-            var sound1 = new buzz.sound("sound/glitch1.mp3");
-            var sound2 = new buzz.sound("sound/glitch2.mp3");
-            var sound3 = new buzz.sound("sound/glitch3.mp3");
+            var sound1 = new buzz.sound("sound/casette.mp3") ;
+            var sound2 = new buzz.sound("sound/cafe.wav") ;
+            var sound3 = new buzz.sound("sound/jazz.mp3") ;
+            var sound4 = new buzz.sound("sound/plane.wav");
+            var sound5 = new buzz.sound("sound/pastry.wav");
+            var sound6 = new buzz.sound("sound/paper.wav");
+            var sound7 = new buzz.sound("sound/cigarette.mp3");
+            var sound8 = new buzz.sound("sound/ambiant.mp3");
+            var sound9 = new buzz.sound("sound/car.mp3");
 
             window.onload = function(){
-                document.getElementById ('donut1') .addEventListener( 'click', function() {sound1.play();});
-
+                document.getElementById ('icon1') .addEventListener( 'click', function() {sound1.play();});
+                document.getElementById ('icon2') .addEventListener( 'click', function() {sound2.play();});
+                document.getElementById ('icon3') .addEventListener( 'click', function() {sound3.play();});
+                document.getElementById ('icon4') .addEventListener( 'click', function() {sound4.play();});
+                document.getElementById ('icon5') .addEventListener( 'click', function() {sound5.play();});
+                document.getElementById ('icon6') .addEventListener( 'click', function() {sound6.play();});
+                document.getElementById ('icon7') .addEventListener( 'click', function() {sound7.play();});
+                document.getElementById ('icon8') .addEventListener( 'click', function() {sound8.play();});
+                document.getElementById ('icon9') .addEventListener( 'click', function() {sound9.play();});
             };
+         </script>       
                 
-                
-        </script>
+        
 
     
     </body> 
